@@ -32,7 +32,7 @@ footer a:hover {
 	opacity: .5;
 }
 
-/* Corporate navbar */
+/* navbar active */
 
 .navbar-font.active {
   font-family: "Be Vietnam Pro", sans-serif;
@@ -43,10 +43,6 @@ footer a:hover {
   padding: 8px 16px;
   border-radius: 50px;
 }
-
-
-
-
 
 /* Hero Section shadow */
 

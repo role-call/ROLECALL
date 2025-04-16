@@ -88,6 +88,14 @@ footer a:hover {
   font-size: 25px;
 }
 
+.profile-detailtext {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #67171f;
+  font-size: 17px;
+}
+
 
 .white-shadow {
 	text-shadow: -.01em -.01em .01em white,

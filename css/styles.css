@@ -104,7 +104,38 @@ footer a:hover {
   font-size: 17px;
 }
 
+/* corporate */
 
+.corporate-title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #67171F!important;
+}
+
+.corporate-subtitle {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #67171f!important;
+  font-size: 25px;
+}
+
+.corporate-detailtext {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #67171f;
+  font-size: 19px;
+}
+
+.corporate-bodytext {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #67171f!important;
+  font-size: 15px;
+}
 
 
 

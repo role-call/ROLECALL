@@ -68,6 +68,26 @@ footer a:hover {
   cursor: pointer;
 }
 
+.banner-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.profile-title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #67171F !important;
+}
+
+.profile-bodytext {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #67171f;
+  font-size: 25px;
+}
+
 
 .white-shadow {
 	text-shadow: -.01em -.01em .01em white,

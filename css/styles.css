@@ -137,12 +137,12 @@ footer a:hover {
   font-size: 15px;
 }
 
-.corporate.caption {
+.corporate-undertext {
   font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 500!important;
+  font-weight: 500;
   font-style: normal;
-  color: #67171f!important;
-  font-size: 15px!important;
+  color: #67171f;
+  font-size: 15px;
 }
 
 
@@ -154,6 +154,8 @@ footer a:hover {
 		0 0 .2em white,
 		0 0 .5em white;
 }
+
+
 /* Fade-in Animation */
 .fade-in {
   opacity: 0;

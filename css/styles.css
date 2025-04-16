@@ -95,3 +95,13 @@ footer a:hover {
 		0 0 .2em white,
 		0 0 .5em white;
 }
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

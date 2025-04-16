@@ -46,6 +46,29 @@ footer a:hover {
 
 /* Hero Section shadow */
 
+/* profile */
+.text-maroon {
+  color: #641a1a;
+}
+
+.button-rounded {
+  background-color: #641a1a;
+  color: #fff6dd;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  border: none;
+  margin: 10px;
+  transition: 0.3s ease;
+}
+
+.button-rounded:hover {
+  background-color: #853030;
+  cursor: pointer;
+}
+
+
 .white-shadow {
 	text-shadow: -.01em -.01em .01em white,
 		.02em .02em .02em white,

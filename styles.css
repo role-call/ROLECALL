@@ -1,0 +1,263 @@
+/* Importing a Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sancreek&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+/* Changing the main font and background colour */
+
+.navbar-font {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #67171f;
+	font-size: 25px;
+}
+
+/* Changing the background colour for the header */
+
+header {
+	background-color: #000060;
+}
+
+/* Changing the background color for the navigation bar */
+
+.navbar {
+	background-color: #efdbbe;
+}
+
+/* Effect on social media buttons */
+
+footer a:hover {
+	opacity: .5;
+}
+
+/* navbar active */
+
+.navbar-font.active {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #efdbbe !important;
+  background-color: #67171f;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+/* Hero Section shadow */
+
+/* profile */
+.text-maroon {
+  color: #641a1a;
+}
+
+.button-rounded {
+  background-color: #641a1a;
+  color: #fff6dd;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  border: none;
+  margin: 10px;
+  transition: 0.3s ease;
+}
+
+.button-rounded:hover {
+  background-color: #853030;
+  cursor: pointer;
+}
+
+.banner-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.profile-title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #67171F !important;
+}
+
+.profile-bodytext {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #67171f;
+  font-size: 25px;
+}
+
+.profile-detailtext {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #67171f;
+  font-size: 17px;
+}
+
+
+.white-shadow {
+	text-shadow: -.01em -.01em .01em white,
+		.02em .02em .02em white,
+		0 0 .2em white,
+		0 0 .5em white;
+}
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.location-bar {
+  background-color: #4a0c0b;
+  width: 33.3333vw; /* 1/3 of viewport width */
+  padding-left: 20px; /* Optional: softens the text alignment */
+}
+
+.location-label {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: #f5ddc7;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.location-box {
+  background-color: #4a0c0b;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  width: 100px;
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+.location-box::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.mini-navbar {
+  width: 66.6666%;
+  background-color:#F3DABA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem; /* Optional: right-side breathing room */
+}
+
+.mini-tab {
+  background: none;
+  border: none;
+  color: #4a0c0b;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+.mini-tab.active {
+  background-color: #a60000;
+  color: #F3DABA;
+  border-radius: 15px;
+  padding: 6px 24px;  
+  font-weight: bold;
+}
+
+.card-button {
+  border: none;
+  padding: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  height: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: left;
+}
+.card-button img {
+  display: block;
+  margin-bottom: 0;
+}
+.card-button > * {
+  margin: 0;
+}
+
+.container {
+	padding-left: 5px ;
+    padding-right: 5px ;
+}
+.card-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-description {
+  background-color: #F3DABA;
+  padding: 16px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #640909;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.card-subtitle {
+  font-style: italic;
+  color: #8a4b45;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #4a0c0b;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.profile-icon-centered {
+  width: 72px;         /* smaller width */
+  height: 72px;        /* smaller height */
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 120px;
+  left: 16px;
+  border: 2px solid #f5ddc7;
+  background-color: #F8D9B6;
+  z-index: 2;
+}
+
+.card-description {
+  background-color: #f5ddc7;
+  padding: 16px;
+  margin-top: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.card-description.has-profile {
+  padding: 12px 16px 16px 72px; /* top, right, bottom, left */
+  margin-top: 8px; /* reduce this too if it's creating space */
+}
+
+

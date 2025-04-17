@@ -186,79 +186,89 @@
 </div>
 		
       <!-- post-card block 1 -->
-      <div class="flex-shrink-0 post-card">
-        <img src="../images/my account1.jpg" alt="Post image" class="post-img">
-        <div class="post-body">
-          <div class="mb-2 d-flex gap-2 align-items-center">
-            <input type="checkbox" id="like1" class="like-toggle">
-            <label for="like1" class="like-label">
-              <i class="bi bi-heart-fill"></i>
-            </label>
+ <div class="flex-shrink-0 post-card position-relative" style="cursor: pointer;" onclick="document.getElementById('fullPostModal1').style.display='block'">
+  <img src="../images/my account1.jpg" alt="Post image" class="post-img">
+  <div class="post-body">
+    <div class="mb-2 d-flex gap-2 align-items-center">
+      <input type="checkbox" id="like1" class="like-toggle">
+      <label for="like1" class="like-label">
+        <i class="bi bi-heart-fill"></i>
+      </label>
+      <i class="bi bi-chat-dots-fill comment-icon"></i>
+    </div>
+    <p class="post-text">10/02/2025, solo production of my improv show</p>
+  </div>
+</div>
 
-            <a href="#commentModal" class="comment-icon">
-              <i class="bi bi-chat-dots-fill"></i>
-            </a>
-          </div>
-          <p class="post-text">
-            10/02/2025, solo production of my improv show
-          </p>
-        </div>
-      </div>
 
            <!-- post-card block 2 -->
-      <div class="flex-shrink-0 post-card">
-        <img src="../images/my account2.jpg" alt="Post image" class="post-img">
-        <div class="post-body">
-          <div class="mb-2 d-flex gap-2 align-items-center">
-            <input type="checkbox" id="like2" class="like-toggle">
-            <label for="like2" class="like-label">
-              <i class="bi bi-heart-fill"></i>
-            </label>
+		<div class="flex-shrink-0 post-card position-relative" style="cursor: pointer;" onclick="document.getElementById('fullPostModal1').style.display='block'">
+  <img src="../images/my account2.jpg" alt="Post image" class="post-img">
+  <div class="post-body">
+    <div class="mb-2 d-flex gap-2 align-items-center">
+      <input type="checkbox" id="like2" class="like-toggle">
+      <label for="like2" class="like-label">
+        <i class="bi bi-heart-fill"></i>
+      </label>
+      <i class="bi bi-chat-dots-fill comment-icon"></i>
+    </div>
+    <p class="post-text">08/12/2024, hiphop rendition of frozen</p>
+  </div>
+</div>
 
-            <a href="#commentModal" class="comment-icon">
-              <i class="bi bi-chat-dots-fill"></i>
-            </a>
-          </div>
-          <p class="post-text">
-            08/12/2024, hiphop rendition of frozen
-          </p>
-        </div>
-      </div>
 		
 		      <!-- post-card block 3 -->
-      <div class="flex-shrink-0 post-card">
-        <img src="../images/my account3.jpg" alt="Post image" class="post-img">
-        <div class="post-body">
-          <div class="mb-2 d-flex gap-2 align-items-center">
-            <input type="checkbox" id="like3" class="like-toggle">
-            <label for="like3" class="like-label">
-              <i class="bi bi-heart-fill"></i>
-            </label>
-
-            <a href="#commentModal" class="comment-icon">
-              <i class="bi bi-chat-dots-fill"></i>
-            </a>
-          </div>
-          <p class="post-text">
-            24/05/2024, i just want to dance at the ballet🎭
-          </p>
-        </div>
-      </div>
-
+				<div class="flex-shrink-0 post-card position-relative" style="cursor: pointer;" onclick="document.getElementById('fullPostModal1').style.display='block'">
+  <img src="../images/my account3.jpg" alt="Post image" class="post-img">
+  <div class="post-body">
+    <div class="mb-2 d-flex gap-2 align-items-center">
+      <input type="checkbox" id="like3" class="like-toggle">
+      <label for="like3" class="like-label">
+        <i class="bi bi-heart-fill"></i>
+      </label>
+      <i class="bi bi-chat-dots-fill comment-icon"></i>
+    </div>
+    <p class="post-text">24/05/2024, i just want to dance at the ballet🎭</p>
+  </div>
+</div>
 		
     </div>
   </div>
 </section>
-
-<!-- COMMENT MODAL -->
-<div id="commentModal" class="modal">
+	
+	
+	<!-- FULL POST MODAL 1 -->
+<div id="fullPostModal1" class="modal">
   <div class="modal-content">
     <a href="#" class="modal-close">&times;</a>
-    <h5>Leave a Comment</h5>
-    <textarea rows="4" style="width: 100%;" placeholder="Write your comment here..."></textarea>
-    <button style="margin-top: 10px;">Submit</button>
+
+    <!-- Post Image -->
+    <img src="../images/my account1.jpg" alt="Full post" style="width: 100%; border-radius: 10px;">
+
+    <!-- Post Info -->
+    <div class="mt-3">
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <input type="checkbox" id="modalLike1" class="like-toggle">
+        <label for="modalLike1" class="like-label"><i class="bi bi-heart-fill"></i></label>
+        <span>23 likes</span>
+      </div>
+      <p class="post-text">10/02/2025, solo production of my improv show</p>
+    </div>
+
+    <hr>
+
+    <!-- Existing Comments -->
+    <div class="mb-2">
+      <p class="mb-1"><strong>Anna:</strong> So inspiring!! ✨</p>
+      <p class="mb-1"><strong>Mike:</strong> Your solo work is unreal 😍</p>
+    </div>
+
+    <!-- Comment Input -->
+    <textarea rows="3" style="width: 100%;" placeholder="Write a comment..."></textarea>
+    <button class="btn btn-primary mt-2" style="background-color: #67171f;">Post</button>
   </div>
 </div>
+
 	
 <!-- NEW POST MODAL -->
 <div id="newPostModal" class="modal">

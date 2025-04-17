@@ -74,46 +74,89 @@
         </div>
       </div>
 
-      <!-- Right Side: MY PORTFOLIO Button -->
-	  <button type="button" class="button-rounded" data-bs-toggle="modal" data-bs-target="#portfolioModal"> MY PORTFOLIO
-	  </button>
+<!-- Right Side: Upload & Social Buttons stacked -->
+<div class="d-flex flex-column align-items-center align-items-md-end ms-md-auto">
+  
+  <!-- Upload Button -->
+  <a href="#portfolioModal" class="btn btn-primary button-rounded mb-2" style="background-color: #67171f;">
+    Upload Portfolio
+  </a>
 
-		<!-- Portfolio Upload Modal -->
-<div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="background-color: #fff7ef; border-radius: 20px;">
-      <div class="modal-header border-0">
-        <h5 class="modal-title profile-title" id="portfolioModalLabel">UPLOAD YOUR WORK</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      
-      <div class="modal-body">
-        <form>
-          <!-- File Upload -->
-          <div class="mb-3">
-            <label for="formFile" class="form-label profile-bodytext">Upload a file</label>
-            <input class="form-control" type="file" id="formFile">
-          </div>
+<!-- The Modal (initially hidden) -->
+<div id="portfolioModal" class="css-modal">
+  <div class="css-modal-content">
+    <a href="#" class="css-modal-close">&times;</a>
+    <h5 class="profile-title">UPLOAD YOUR WORK</h5>
 
-          <!-- Link Input -->
-          <div class="mb-3">
-            <label for="portfolioLink" class="form-label profile-bodytext">Or paste a link</label>
-            <input type="url" class="form-control" id="portfolioLink" placeholder="https://yourportfolio.com">
-          </div>
-        </form>
+    <form>
+      <!-- File Upload -->
+      <div class="mb-3">
+        <label for="formFile" class="form-label profile-bodytext">Upload a file</label>
+        <input class="form-control" type="file" id="formFile">
       </div>
 
-      <div class="modal-footer border-0">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" style="background-color: #67171f; border-color: #67171f;">Save</button>
+      <!-- Link Input -->
+      <div class="mb-3">
+        <label for="portfolioLink" class="form-label profile-bodytext">Or paste a link</label>
+        <input type="url" class="form-control" id="portfolioLink" placeholder="https://yourportfolio.com">
       </div>
-    </div>
+
+      <!-- Buttons -->
+      <div class="d-flex justify-content-end gap-2">
+        <a href="#" class="btn btn-secondary">Close</a>
+        <button type="submit" class="btn btn-primary" style="background-color: #67171f;">Save</button>
+      </div>
+    </form>
+  </div>
+</div>	  
+
+<!-- Social Upload Buttons -->
+<div class="d-flex gap-2">
+  <a href="#instagramModal" class="btn btn-sm text-white button-rounded px-3 py-1" style="background-color: #67171f; font-size: 0.75rem;">
+    <i class="bi bi-instagram me-1"></i>Instagram
+  </a>
+  <a href="#tiktokModal" class="btn btn-sm text-white button-rounded px-3 py-1" style="background-color: #67171f; font-size: 0.75rem;">
+    <i class="bi bi-tiktok me-1"></i>TikTok
+  </a>
+</div>
+
+		
+		<!-- Instagram Modal -->
+<div id="instagramModal" class="css-modal">
+  <div class="css-modal-content">
+    <a href="#" class="css-modal-close">&times;</a>
+    <h5 class="profile-title">Add Instagram Link</h5>
+    <form>
+      <div class="mb-3">
+        <input type="url" class="form-control" id="instagramLink" placeholder="https://instagram.com/yourprofile">
+      </div>
+      <div class="d-flex justify-content-end gap-2">
+        <a href="#" class="btn btn-secondary">Close</a>
+        <button type="submit" class="btn btn-primary" style="background-color: #67171f;">Save</button>
+      </div>
+    </form>
   </div>
 </div>
 
-
-    </div>
+<!-- TikTok Modal -->
+<div id="tiktokModal" class="css-modal">
+  <div class="css-modal-content">
+    <a href="#" class="css-modal-close">&times;</a>
+    <h5 class="profile-title">Add TikTok Link</h5>
+    <form>
+      <div class="mb-3">
+        <input type="url" class="form-control" id="tiktokLink" placeholder="https://tiktok.com/@yourprofile">
+      </div>
+      <div class="d-flex justify-content-end gap-2">
+        <a href="#" class="btn btn-secondary">Close</a>
+        <button type="submit" class="btn btn-primary" style="background-color: #67171f;">Save</button>
+      </div>
+    </form>
   </div>
+</div>
+		</div>
+	  </div>
+	</div>
 
 <!-- ABOUT ME SECTION -->
 <section style= "background-color: #fff7ef;">
@@ -125,6 +168,92 @@
     </p>
   </div>
 </section>
+	
+	<!-- watch me -->
+<!-- USER POSTS SECTION -->
+<section style="background-color: #fff7ef;">
+  <div class="container py-4">
+    <h3 class="profile-title mb-4">WATCH ME</h3>
+
+    <div class="d-flex overflow-auto gap-3 pb-3" style="scroll-snap-type: x mandatory; scroll-behavior: smooth;">
+      
+      <!-- post-card block 1 -->
+      <div class="flex-shrink-0 post-card">
+        <img src="../images/my account1.jpg" alt="Post image" class="post-img">
+        <div class="post-body">
+          <div class="mb-2 d-flex gap-2 align-items-center">
+            <input type="checkbox" id="like1" class="like-toggle">
+            <label for="like1" class="like-label">
+              <i class="bi bi-heart-fill"></i>
+            </label>
+
+            <a href="#commentModal" class="comment-icon">
+              <i class="bi bi-chat-dots-fill"></i>
+            </a>
+          </div>
+          <p class="post-text">
+            10/02/2025, solo production of my improv show
+          </p>
+        </div>
+      </div>
+
+           <!-- post-card block 2 -->
+      <div class="flex-shrink-0 post-card">
+        <img src="../images/my account2.jpg" alt="Post image" class="post-img">
+        <div class="post-body">
+          <div class="mb-2 d-flex gap-2 align-items-center">
+            <input type="checkbox" id="like2" class="like-toggle">
+            <label for="like2" class="like-label">
+              <i class="bi bi-heart-fill"></i>
+            </label>
+
+            <a href="#commentModal" class="comment-icon">
+              <i class="bi bi-chat-dots-fill"></i>
+            </a>
+          </div>
+          <p class="post-text">
+            08/12/2024, hiphop rendition of frozen
+          </p>
+        </div>
+      </div>
+		
+		      <!-- post-card block 1 -->
+      <div class="flex-shrink-0 post-card">
+        <img src="../images/my account3.jpg" alt="Post image" class="post-img">
+        <div class="post-body">
+          <div class="mb-2 d-flex gap-2 align-items-center">
+            <input type="checkbox" id="like3" class="like-toggle">
+            <label for="like3" class="like-label">
+              <i class="bi bi-heart-fill"></i>
+            </label>
+
+            <a href="#commentModal" class="comment-icon">
+              <i class="bi bi-chat-dots-fill"></i>
+            </a>
+          </div>
+          <p class="post-text">
+            24/05/2024, i just want to dance at the ballet🎭
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMMENT MODAL -->
+<div id="commentModal" class="modal">
+  <div class="modal-content">
+    <a href="#" class="modal-close">&times;</a>
+    <h5>Leave a Comment</h5>
+    <textarea rows="4" style="width: 100%;" placeholder="Write your comment here..."></textarea>
+    <button style="margin-top: 10px;">Submit</button>
+  </div>
+</div>
+	
+
+
+	
 
 <!-- CONTACT ME SECTION -->
 <section style="background-color: #efdbbe;">
@@ -157,22 +286,21 @@
 	<!-- footer -->
 <footer style="background-color: #fff7ef;">
   <div class="container py-4">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-maroon">
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center text-maroon">
       
-      <div class="mb-3 mb-md-0">
+      <div class="mb-3 mb-sm-0">
         <h5 class="profile-title">ROLECALL</h5>
         <p class="mb-0 profile-bodytext">Your stage. Your network.</p>
       </div>
 
-      <div class="d-flex flex-column text-end">
-        <a href="https://www.instagram.com/rolecallnl/" target="_blank" class="text-decoration-none profile-subtitle mb-1">Our Instagram
-        </a>
-        <a href="https://www.tiktok.com/@rolecall_nl" target="_blank" class="text-decoration-none profile-subtitle">Our TikTok
-        </a>
+      <div class="d-flex flex-column text-center text-sm-end">
+        <a href="https://www.instagram.com/rolecallnl/" target="_blank" class="text-decoration-none profile-subtitle mb-1">Our Instagram</a>
+        <a href="https://www.tiktok.com/@rolecall_nl" target="_blank" class="text-decoration-none profile-subtitle">Our TikTok</a>
       </div>
     </div>
   </div>
 </footer>
+
 
 
 	

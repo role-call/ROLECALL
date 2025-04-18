@@ -54,23 +54,30 @@
 	  <div class="limelight-toolbar d-flex w-100">
 	  
 		  
-<!-- LOCATION BAR -->
-<div class="d-flex align-items-center flex-wrap py-2 px-4 location-bar" style="background-color: #fff7ef;">
-  <span class="me-3 profile-subtitle">LOCATION:</span>
-  <input type="text" class="form-control flex-grow-1" placeholder="Enter a city or region" style="max-width: 300px;">
+<!-- LOCATION + FILTER BAR -->
+<div class="container-fluid px-4 py-3" style="background-color: #fff7ef;">
+  <div class="row align-items-center gx-3">
+    
+    <!-- LEFT: LOCATION INPUT -->
+    <div class="col-lg-6 d-flex align-items-center gap-2 mb-2 mb-lg-0">
+      <label class="fw-bold text-uppercase mb-0" style="color: #6b1e1e; white-space: nowrap;">Location</label>
+      <input type="text" class="form-control" placeholder="Enter a city or region" />
+    </div>
+
+    <!-- RIGHT: FILTER BUTTONS -->
+    <div class="col-lg-6 d-flex flex-wrap justify-content-lg-end gap-2">
+      <button class="btn rounded-pill text-white" style="background-color: #8b0000;">All</button>
+      <button class="btn rounded-pill btn-outline-secondary">Accounts</button>
+      <button class="btn rounded-pill btn-outline-secondary">Open Castings</button>
+      <button class="btn rounded-pill btn-outline-secondary">Theaters</button>
+      <button class="btn rounded-pill btn-outline-secondary">Theater Clubs</button>
+      <button class="btn rounded-pill btn-outline-secondary">Workshops</button>
+    </div>
+
+  </div>
 </div>
 
-<!-- MINI NAV BAR -->
-<div class="d-flex flex-wrap gap-2 py-3 px-4 mini-nav" style="background-color: #fff7ef; border-top: 1px solid #ccc;">
-  <button class="mini-tab btn btn-outline-dark rounded-pill px-3 py-1 active" data-tab="all">All</button>
-  <button class="mini-tab btn btn-outline-dark rounded-pill px-3 py-1" data-tab="accounts">Accounts</button>
-  <button class="mini-tab btn btn-outline-dark rounded-pill px-3 py-1" data-tab="open-castings">Open Castings</button>
-  <button class="mini-tab btn btn-outline-dark rounded-pill px-3 py-1" data-tab="theaters">Theaters</button>
-  <button class="mini-tab btn btn-outline-dark rounded-pill px-3 py-1" data-tab="theater-clubs">Theater Clubs</button>
-  <button class="mini-tab btn btn-outline-dark rounded-pill px-3 py-1" data-tab="workshops">Workshops</button>
-</div>
-
-  </div>	  
+	  </div>
 	  
 	  
 	  <!-- ✅ Card Grid Section -->
@@ -88,6 +95,8 @@
         </div>
       </button>
     </div>
+	  
+	  
   <!-- Card Button 2 -->
 <div class="col-12 col-md-4 d-flex">
       <button class="card-button w-100 text-start">

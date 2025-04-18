@@ -123,17 +123,20 @@ footer a:hover {
 .location-label {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #f5ddc7;
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .location-box {
   background-color: #4a0c0b;
   border: none;
   color: white;
-  padding: 6px 10px;
-  width: 100px;
+  padding: 10px 16px;
   font-size: 1rem;
+  width: 100%; 
+  min-width: 0;
+  flex-grow: 1
   border-radius: 0;
 }
 

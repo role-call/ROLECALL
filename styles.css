@@ -179,18 +179,19 @@ footer a:hover {
   flex-direction: column;
   width: 100%; 
   height: 100%;
+  margin: 0;
   justify-content: space-between;
   cursor: pointer;
   text-align: left;
 }
+
 .card-button img {
   display: block;
-  margin-bottom: 0;
-}
-.card-button > * {
   margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 0;
 }
-
 .container {
 	padding-left: 5px ;
     padding-right: 5px ;

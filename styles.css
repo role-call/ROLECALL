@@ -146,7 +146,7 @@ footer a:hover {
   width: 66.6666%;
   background-color:#F3DABA;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-right: 2rem; /* Optional: right-side breathing room */
 }
@@ -155,10 +155,11 @@ footer a:hover {
   background: none;
   border: none;
   color: #4a0c0b;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   padding: 10px 16px;
   white-space: nowrap;
+	
 }
 .mini-tab.active {
   background-color: #a60000;

@@ -246,6 +246,7 @@ footer a:hover {
 
 
 
+
 /* Modal adjustments for Bootstrap */
 .modal {
   position: fixed;
@@ -304,6 +305,46 @@ footer a:hover {
 .comment-btn:hover,
 .like-btn:hover {
   color: #b22222;
+}
+
+
+/* the limelight*/
+
+/* Prevent overflow */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make location bar and mini-nav full width */
+.location-bar,
+.mini-nav {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive image fixes */
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive columns */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .mini-tab {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .d-flex.flex-wrap.gap-2 {
+    justify-content: center;
+  }
 }
 
 

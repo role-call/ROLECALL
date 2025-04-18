@@ -142,6 +142,17 @@ footer a:hover {
   font-weight: bold;
 }
 
+/* Heart default (not liked) */
+.like-label i {
+  color: gray;
+  transition: color 0.2s ease;
+}
+
+/* Heart when liked */
+.like-toggle:checked + .like-label i {
+  color: red;
+}
+
 
 
 

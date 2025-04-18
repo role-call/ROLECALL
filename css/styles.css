@@ -389,7 +389,7 @@ footer a:hover {
   background-color: #4a0c0b;
   border: none;
   color: white;
-  padding: 6px 10px;
+  padding: 10px 16px;
   width: 100px;
   font-size: 1rem;
   border-radius: 0;
@@ -440,6 +440,14 @@ footer a:hover {
   justify-content: space-between;
   cursor: pointer;
   text-align: left;
+}
+
+.card-button img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 0;
 }
 
 .container {
